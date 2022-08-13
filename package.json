@@ -1,21 +1,25 @@
 {
-  "name": "con-nect",
+  "name": "connect",
   "version": "0.1.0",
   "private": true,
+  "keywords": [],
+  "author": "",
   "dependencies": {
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
+    "express": "4.17.1",
+    "moment": "^2.29.4",
+    "nodemon": "^2.0.19",
+    "socket.io": "^2.4.1",
+    "uuid": "8.3.0",
+    "webrtc-adapter": "7.7.0"
+  },
+  "devDependencies": {
     "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-scripts": "4.0.3",
-    "web-vitals": "^1.0.1"
+    "react-scripts": "^5.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "node server.js",
+    "dev": "nodemon server.js"
   },
   "eslintConfig": {
     "extends": [
@@ -34,5 +38,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "proxy": "http://localhost:3000"
 }
